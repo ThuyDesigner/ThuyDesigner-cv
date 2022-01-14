@@ -1,0 +1,41 @@
+.show-notification {
+  text-decoration: underline;
+  color: #fea581;
+}
+.btn-close-x {
+  right: 0;
+  position: absolute;
+  background: none;
+}
+.icon-close {
+  background: none;
+  border: none;
+}
+.btn-close svg {
+  color: black;
+}
+.btn-close svg:hover {
+  color: red;
+}
+/*btn-close other*/
+.close-other {
+  right: 0;
+}
+.btn-close-other {
+  right: -15px;
+  position: absolute;
+  background: none;
+  top: -10px;
+  background: #1d1d1d;
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+.btn-close-other svg {
+  color: white;
+  margin: -5px -10px 0 -10px;
+}
+.btn-close-other svg:hover {
+  color: #f44336;
+}
