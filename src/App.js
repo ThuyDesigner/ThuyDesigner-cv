@@ -1,25 +1,20 @@
 import "./styles.css";
-import AlertsCommon from "./component/Alerts/AlertsCommon";
 import "bootstrap/dist/css/bootstrap.css";
-import ButtonCommon from "./component/Button/ButtonCommon";
-import BagetCommon from "./component/Baget/BagetCommon";
-import AvataImg from "./component/Avata/AvataImg";
-import AvataUser from "./component/Avata/AvataUser";
-import Card from "./component/Card/Card";
-import "./App.css";
-import Ticon from "./component/Icon/TIcon";
-import ShowItem from "./component/ShowItem/ShowItem";
-import ListCommon from "./component/ListCommon/ListCommon";
-import Img from "./component/Card/Img";
-import imageUser from "./IMG/User.png";
-import DropDownCommon from "./component/DropDown/DropDownCommon";
-import SpinnersCommon from "./component/Spinners/SpinnersCommon";
-import TooltipCommon from "./component/Tooltip/TooltipCommon";
-import InputCommon from "./component/InputCommon/InputCommon";
-import TodoForm from "./component/InputCommon/TodoForm";
-import React, { useState, useEffect } from 'react';
-import queryString from 'query-string';
-import Checkbox from "./component/InputCommon/Checkbox";
+import "./App.scss";
+
+import React, { useState, useEffect } from "react";
+import TitleContent from "./component/Title/TitleContent";
+import GrIconText from "./component/GrIconText/GrIconText";
+// -- import icon 
+import user from "./IMG/User.png";
+import pin from "./IMG/pin.svg";
+import birthday from "./IMG/birthday.svg"
+import mail from "./IMG/mail.svg"
+import phone from "./IMG/phone.svg"
+import behance from "./IMG/behance.svg"
+import dribble from "./IMG/dribble.svg"
+// --------------------
+
 const svgicon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -38,373 +33,55 @@ const svgicon = (
 const img =
   "https://image.thanhnien.vn/1080/uploaded/haoph/2021_03_06/img_0467_lsvb.jpg";
 export default function App() {
-  const [todoList, setTodoList] = useState([
-    { id: 1, title: 'Hi, I’m @ThuyDesigner  😍', email:'ngthithuthuy' },
-    { id: 2, title: 'I’m interested in ... 🥰' },
-    { id: 3, title: 'I’m looking to collaborate on🚀' },
-  ]);
-  function handleTodoFormSubmit(formValues) {
-    console.log('Form submit: ', formValues);
-    // add new todo to current todo list
-    const newTodo = {
-      id: todoList.length + 1,
-      ...formValues,
-    };
-    const newTodoList = [...todoList];
-    newTodoList.push(newTodo);
-    setTodoList(newTodoList);
-  };
   return (
-    <div className="bg-light ">
-      <div className="container-fluid">
-        <div className="row">
-          <div className=" tab-selection bg-dark  col-md-2">
-            <ListCommon
-              titleLists={[
-                {
-                  title: "AlertsCommon",
-                  section: "#section1",
-                  icon: Ticon.nav,
-                },
-                {
-                  title: "ButtonCommon",
-                  section: "#section2",
-                  icon: Ticon.nav,
-                },
-                { title: "BagetCommon", section: "#section3", icon: Ticon.nav },
-                {
-                  title: "AvataUser & AvataImg",
-                  section: "#section4",
-                  icon: Ticon.nav,
-                },
-                {
-                  title: "CardCommon",
-                  section: "#section5",
-                  icon: Ticon.nav,
-                },
-                {
-                  title: "DropdownCommon",
-                  section: "#section6",
-                  icon: Ticon.nav,
-                },
-                {
-                  title: "SpinnersCommon",
-                  section: "#section7",
-                  icon: Ticon.nav,
-                },
-              ]}
-              addClass="fixed"
-            ></ListCommon>
-          </div>
-          <div className=" col-md-10 App ">
-            <div className="fix-top">
-              <h1 className="">
-                <span></span> Show all component
-              </h1>
+    <div className="bg-1 ">
+      <div class="container-fluid ">
+        <div className="container">
+          {/* <div className="hearder-cv">
+            <div class="row">
+              <div class="col-lg-4"> x4</div>
+              <div class="col-lg-6"> x6</div>
             </div>
-
-            {/*this is Alerts  */}
-            <ShowItem
-              name="1.AlertsCommon"
-              directions={[
-                `type = "", isbtnbutton = false, children = "", icon = ""`,
-              ]}
-              id="section1"
-            >
-              {" "}
-              <div className="col-md-6">
-                <AlertsCommon
-                  className="pd-2"
-                  isbtnbutton="true"
-                  icon={svgicon}
-                >
+          </div> */}
+          <div className="content-cv">
+            <div class="row">
+              <div class="col-lg-4 content-cv-left ">
+                <div className="avata-user text-center d-flex justify-content-center">
                   <div className="row">
-                    <div>
-                      <h1>Well done! </h1>
-                      <h6>
-                        Aww yeah, you successfully read this important alert
-                        message. This example text is going to run a bit longer
-                        so that you can see how spacing within an alert works
-                        with this kind of content.
-                      </h6>
-                      <hr></hr>
+                    <div className="">
+                      <img
+                        src={user}
+                        class="rounded-circle"
+                        alt="Cinque Terre"
+                      ></img>
+                      <div className="name-user">Name of user</div>
+                      <div className="sub-job">UI & UX designer</div>
                     </div>
-                    <div>An example success alert with an icon</div>
                   </div>
-                </AlertsCommon>
-                <AlertsCommon type="warning">This is AlertsCommon</AlertsCommon>
-              </div>
-              <div className="col-md-6">
-                <AlertsCommon
-                  className="pd-2"
-                  isbtnbutton="true"
-                  type="secondary"
-                  icon={svgicon}
-                >
-                  <h2>This is Baget Secondary </h2>
-                </AlertsCommon>
-              </div>
-            </ShowItem>
-            {/*this is Button   */}
-            <ShowItem
-              name="2.ButtonCommon"
-              directions={[
-                `type = "", variant = "", children = "", size = "", addClass
-              = "", isLoading = false`,
-              ]}
-              id="section2"
-            >
-              <div className=" p-3">
-                <ButtonCommon type="submit" variant="outline-primary">
-                  {" "}
-                  button
-                </ButtonCommon>
-              </div>
-              <div className=" p-3 ">
-                <ButtonCommon type="buton" addClass="btn-outline-secondary  ">
-                  {" "}
-                  button
-                </ButtonCommon>
-              </div>
-              <div className="  p-3">
-                <ButtonCommon
-                  type="buton"
-                  isLoading="true"
-                  addClass="btn-primary"
-                >
-                  {" "}
-                  button
-                </ButtonCommon>
-              </div>
-            </ShowItem>
-
-            {/*this is Baget */}
-
-            <ShowItem
-              name="3.BagetCommon"
-              directions={[
-                `bgColor = "", isPill = false, children, addClass = ""`,
-              ]}
-              id="section3"
-            >
-              <div className=" p-3">
-                <h5>
-                  this is baget{" "}
-                  <BagetCommon bgColor="secondary" isPill="true" isPill="true">
-                    hello
-                  </BagetCommon>
-                </h5>
-                <h1>
-                  this is baget{" "}
-                  <BagetCommon bgColor="warning">hello</BagetCommon>
-                </h1>
-              </div>
-            </ShowItem>
-
-            {/*this is Avata */}
-
-            <ShowItem
-              name="4.AvataUser & AvataImg"
-              directions={[
-                `srcImg = "", isFluid = false, isRounded = false,
-              isRoundedCircle = false, isthumbnai = false, addClass = "",
-              width = "", height = "", size = ""`,
-              ]}
-              id="section4"
-            >
-              <div className="col-md-12">
-                <AvataImg
-                  srcImg={img}
-                  size="big"
-                  isRoundedCircle="true"
-                ></AvataImg>
-                <AvataImg srcImg={img} size="big" isthumbnai="true"></AvataImg>
-              </div>
-              <div className=" p-3 col-md-4">
-                <AvataUser
-                  img={img}
-                  name="Nguyen Thi Thu Thuy"
-                  info="Designer"
-                  subInfo="CRM"
-                  isBtnAction="TRUE"
-                  isBaget="true"
-                ></AvataUser>
-              </div>
-              <div className=" p-3 col-md-4">
-                <AvataUser
-                  img={img}
-                  name="Nguyen Thi Thu Thuy"
-                  info="Designer"
-                  subInfo="CRM"
-                  isBtnAction="TRUE"
-                  isBaget="true"
-                ></AvataUser>
-              </div>
-              <div className=" p-3 col-md-4">
-                <AvataUser
-                  img={img}
-                  name="Nguyen Thi Thu Thuy"
-                  info="Designer"
-                  subInfo="CRM"
-                  isBtnAction="TRUE"
-                  isBaget="true"
-                ></AvataUser>
-              </div>
-            </ShowItem>
-
-            {/*this is Card */}
-            <ShowItem
-              name="5.CardCommon"
-              directions={[`children, addClass = "" `]}
-              id="section5"
-            >
-              <div className="col-md-2">
-                <Card>
-                  <Card.Header addClass="bg-white">
-                    <Card.Img
-                      type="img-bottom"
-                      src={imageUser}
-                      isRoundedCircle="true"
-                    ></Card.Img>
-                  </Card.Header>
-                  <Card.Body>
-                    <h3 class="card-title">Nguyen Thi Thu Thuy</h3>
-                    <p class="card-text">
-                      👋 Hi, I’m @ThuyDesigner <br></br>
-                      👀 I’m interested in ... <br></br>
-                      🌱 I’m currently learning ...<br></br>
-                      💞️ I’m looking to collaborate on... <br></br>
-                      📫 How to reach me ...
-                    </p>
-                  </Card.Body>
-                  <Card.Footer
-                    isButton="true"
-                    btn1="Read more"
-                    btn2="Contact"
-                  ></Card.Footer>
-                </Card>
-              </div>
-              {/* test using card  */}
-              <div className="col-md-2">
-                <Card>
-                  <Card.Header>
-                    <h2>Help desk</h2>
-                  </Card.Header>
-                  <Card.Footer>
-                    <div className="border-bottom w-100 pb-2">
-                      {" "}
-                      <Card.Link href="" addClass="">
-                        What do you want?
-                      </Card.Link>
-                    </div>
-                    <div className="border-bottom w-100 pb-2">
-                      {" "}
-                      <Card.Link href="" addClass=" ">
-                        What’s your favorite thing you own and why?
-                      </Card.Link>
-                    </div>
-                    <div className=" w-100 pb-2">
-                      {" "}
-                      <Card.Link href="" addClass=" ">
-                        How do you like to be comforted when you’re sad or
-                        upset?
-                      </Card.Link>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </div>
-            </ShowItem>
-            {/*Drop down  */}
-            <ShowItem
-              name="6.Dropdown"
-              directions={[
-                `ListItem = [], addClass = "", nameBtn = " Dropdown button",`,
-              ]}
-              id="section6"
-            >
-              <div className="row">
-                <div className="col-md-4">
-                  {" "}
-                  <DropDownCommon
-                    addClass="btn-info"
-                    nameBtn="Click me to see special thing!"
-                    ListItem={[
-                      `"Bad Blood" (2014)`,
-                      `"Santa Baby" (2007)`,
-                      `"A Place in This World" (2006)`,
-                      `
-                    "Christmas Must Be Something More" (2007)`,
-                    ]}
-                  ></DropDownCommon>
-                </div>
-                <div className="col-md-4">
-                  {" "}
-                  <DropDownCommon
-                    addClass="btn-primary"
-                    ListItem={["list 1", "list 2", "list 3"]}
-                  ></DropDownCommon>
                 </div>
 
-                <div className="col-md-4">
-                  {" "}
-                  <DropDownCommon
-                    ListItem={["list 1", "list 2", "list 3"]}
-                  ></DropDownCommon>
+                <div className="content">
+                  <TitleContent
+                    title="About me"
+                    sub="( 3 years of experience )"
+                    decription="Hello! I'm Thuy Nguyen. With a strong passion in designing User Interfaces for Mobile and Website to become more beautiful and clear. Besides that, I have to strike a balance between easy to use customer and developer easy to program to come up with the perfect products.
+I consider myself a creative, open minded and proactive person, who enjoys teamwork and who is always willing to face new challenges. Moreover, i always update new styles about design from social media (Facebook, Instagram, Behance, Dribbble..). This isn't only a big resource to discover but also to connect with designers worldwide. I believe that this is one of the best ways to perfect yourself more in the future.
+"
+                  ></TitleContent>
+                  <GrIconText 
+                    icon={pin}
+                    text="Trung Hamlet, Vinh Phuong Commune, Nha Trang City"
+                    addClass="pt-1"
+                  ></GrIconText>
+                  <GrIconText icon={birthday} text="October 25, 1996" addClass="pt-2"></GrIconText>
+                  <GrIconText icon={mail} text="Ngthithuthuy96@gmail.com" addClass="pt-2"></GrIconText>
+                  <GrIconText icon={phone} text="+84 379 965 922" addClass="pt-2"></GrIconText>
+                  <GrIconText icon={behance} isLink = "true" addLink="https://www.behance.net/ngthithuthuy96" text="https://www.behance.net/ngthithuthuy96" addClass="pt-2"></GrIconText>
+                  <GrIconText icon={dribble} isLink = "true" addLink="https://dribbble.com/thuthuycntt" text="https://dribbble.com/thuthuycntt" addClass="pt-2"></GrIconText>
                 </div>
               </div>
-            </ShowItem>
-            {/*spinner  */}
-            <ShowItem
-              name="7.SpinnersCommon"
-              directions={[`type = "", color = "", addClass = ""`]}
-              id="section7"
-            >
-              <div className="col">
-                <span className="pe-2">
-                  <SpinnersCommon type="grow" addClass="pd-2"></SpinnersCommon>
-                </span>
-                <span className="pe-2">
-                  {" "}
-                  <SpinnersCommon type="spinner"></SpinnersCommon>
-                </span>
-                <span className="pe-2">
-                  {" "}
-                  <SpinnersCommon
-                    type="grow"
-                    color="text-danger"
-                  ></SpinnersCommon>
-                </span>
-                <span className="pe-2">
-                  {" "}
-                  <SpinnersCommon
-                    type="spinner"
-                    color="text-dark"
-                  ></SpinnersCommon>
-                </span>
-              </div>
-            </ShowItem>
-            {/*tooltip  */}
-            <ShowItem name="8.TooltipCommon" directions={[``]} id="section7">
-              <div className="col-md-3">
-                <InputCommon
-                  ContentLabe="Your name or your email"
-                  placeholder="Please add your name or your email in here"
-                  size ="form-control-lg"
-                ></InputCommon>
-                 <InputCommon
-                  ContentLabe="Your name or your email"
-                  placeholder="Please add your name or your email in here"
-                  size ="" isButton ="true"
-                ></InputCommon>
-               
-                
-                <TodoForm onSubmit={handleTodoFormSubmit}></TodoForm>
-                 <ListCommon  titleLists={todoList} addClass="bg-dark">
-
-                </ListCommon>
-                <InputCommon isButton="true"></InputCommon>
-              </div>
-            </ShowItem>
+              <div class="col-lg-8 content-cv-right"> x6</div>
+            </div>
           </div>
         </div>
       </div>
