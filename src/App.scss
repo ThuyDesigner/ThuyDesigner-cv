@@ -1,0 +1,68 @@
+
+:root {
+  --color-light-primary: #343A40;
+  --color-light-secondary: #8B9BAF;
+  --color-white: white;
+  --color-light-action-primary: #0F7E9B;
+  --color-hover-button-dark: #3530b9;
+  --color-box-shawdown:rgba(66, 18, 18, 0.1);
+  --font-family: "Montserrat", Times, serif;
+  --color-bg-baget:#EEEEFD;
+  --color-bg-blue:#E6E6FC;
+  --color-bg-light-default:#f9f9fc;
+  --color-bg-dark-default:#C8C8C8;
+  --color-bg-title:#F9ACBB;
+
+}
+.color-primary{
+  color: var(--color-light-secondary);
+}
+.bg-1{
+  background-color: #E7EAEE;
+  height: auto;
+}
+.hearder-cv{
+  height: fit-content;
+  background: url("./IMG/header.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  height: 100vh;
+}
+.content-cv{
+  height: fit-content;
+  background: url("./IMG/content1.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  height: 100vh;
+  .content-cv-left{
+    padding: 60px;
+    .avata-user{
+      img{
+        height: 250px;
+        width: 250px;
+      }
+      
+    }
+    .name-user{
+      font-size: 26px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--color-light-primary);
+    }
+    .sub-job{
+      font-size: 18px;
+      color: var(--color-light-secondary);
+
+    }
+  }
+  .content-cv-right{
+    padding: 40px;
+    .content-timeline{
+      font-size: 18px;
+        font-weight: 700;
+        color: var( --color-light-primary);
+        text-transform: uppercase;
+    }
+  }
+}
+
