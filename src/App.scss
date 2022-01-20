@@ -14,6 +14,9 @@
   --color-bg-title:#F9ACBB;
 
 }
+.color-primary{
+  color: var(--color-light-secondary);
+}
 .bg-1{
   background-color: #E7EAEE;
   height: auto;
@@ -54,6 +57,12 @@
   }
   .content-cv-right{
     padding: 40px;
+    .content-timeline{
+      font-size: 18px;
+        font-weight: 700;
+        color: var( --color-light-primary);
+        text-transform: uppercase;
+    }
   }
 }
 

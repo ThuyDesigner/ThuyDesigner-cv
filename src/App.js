@@ -5,14 +5,16 @@ import "./App.scss";
 import React, { useState, useEffect } from "react";
 import TitleContent from "./component/Title/TitleContent";
 import GrIconText from "./component/GrIconText/GrIconText";
-// -- import icon 
+import TimeLine from "./component/TimeLine/TimeLine";
+
+// -- import icon
 import user from "./IMG/User.png";
 import pin from "./IMG/pin.svg";
-import birthday from "./IMG/birthday.svg"
-import mail from "./IMG/mail.svg"
-import phone from "./IMG/phone.svg"
-import behance from "./IMG/behance.svg"
-import dribble from "./IMG/dribble.svg"
+import birthday from "./IMG/birthday.svg";
+import mail from "./IMG/mail.svg";
+import phone from "./IMG/phone.svg";
+import behance from "./IMG/behance.svg";
+import dribble from "./IMG/dribble.svg";
 // --------------------
 
 const svgicon = (
@@ -68,19 +70,80 @@ export default function App() {
 I consider myself a creative, open minded and proactive person, who enjoys teamwork and who is always willing to face new challenges. Moreover, i always update new styles about design from social media (Facebook, Instagram, Behance, Dribbble..). This isn't only a big resource to discover but also to connect with designers worldwide. I believe that this is one of the best ways to perfect yourself more in the future.
 "
                   ></TitleContent>
-                  <GrIconText 
+                  <GrIconText
                     icon={pin}
                     text="Trung Hamlet, Vinh Phuong Commune, Nha Trang City"
                     addClass="pt-1"
                   ></GrIconText>
-                  <GrIconText icon={birthday} text="October 25, 1996" addClass="pt-2"></GrIconText>
-                  <GrIconText icon={mail} text="Ngthithuthuy96@gmail.com" addClass="pt-2"></GrIconText>
-                  <GrIconText icon={phone} text="+84 379 965 922" addClass="pt-2"></GrIconText>
-                  <GrIconText icon={behance} isLink = "true" addLink="https://www.behance.net/ngthithuthuy96" text="https://www.behance.net/ngthithuthuy96" addClass="pt-2"></GrIconText>
-                  <GrIconText icon={dribble} isLink = "true" addLink="https://dribbble.com/thuthuycntt" text="https://dribbble.com/thuthuycntt" addClass="pt-2"></GrIconText>
+                  <GrIconText
+                    icon={birthday}
+                    text="October 25, 1996"
+                    addClass="pt-2"
+                  ></GrIconText>
+                  <GrIconText
+                    icon={mail}
+                    text="Ngthithuthuy96@gmail.com"
+                    addClass="pt-2"
+                  ></GrIconText>
+                  <GrIconText
+                    icon={phone}
+                    text="+84 379 965 922"
+                    addClass="pt-2"
+                  ></GrIconText>
+                  <GrIconText
+                    icon={behance}
+                    isLink="true"
+                    addLink="https://www.behance.net/ngthithuthuy96"
+                    text="https://www.behance.net/ngthithuthuy96"
+                    addClass="pt-2"
+                  ></GrIconText>
+                  <GrIconText
+                    icon={dribble}
+                    isLink="true"
+                    addLink="https://dribbble.com/thuthuycntt"
+                    text="https://dribbble.com/thuthuycntt"
+                    addClass="pt-2"
+                  ></GrIconText>
                 </div>
               </div>
-              <div class="col-lg-8 content-cv-right"> x6</div>
+              {/* group right */}
+              <div class="col-lg-8 content-cv-right">
+                <div className="Edu">
+                  <TitleContent title="Education & Language"> </TitleContent>
+                  <TimeLine
+                    time="2018"
+                    content="Graduated Telecommunications University"
+                  >
+                    <div className="pt-2">
+                      Bachelor of Information Technology
+                    </div>
+                    <div className="color-primary pt-1">
+                      Technology software
+                    </div>
+                    <div className="content-timeline pt-2">
+                      English -TOEIC 450
+                    </div>
+                  </TimeLine>
+                </div>
+                <div className="Edu">
+                  <TitleContent title="Experience"> </TitleContent>
+                  <TimeLine
+                    time="2015"
+                    content="Design interface for
+                    the selling ice cream page."
+                  >
+                    <div className="pt-2">
+                      Bachelor of Information Technology
+                    </div>
+                    <div className="color-primary pt-1">
+                      Technology software
+                    </div>
+                    <div className="content-timeline pt-2">
+                      English -TOEIC 450
+                    </div>
+                  </TimeLine>
+                </div>
+              </div>
             </div>
           </div>
         </div>
