@@ -1,0 +1,25 @@
+<svg id="ListSkill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="8" viewBox="0 0 98 8">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="80" height="8" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+    <g transform="translate(-104 -114)">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="4" cy="4" r="4" transform="translate(104 114)" fill="#343a40"/>
+    </g>
+    <g transform="translate(-86 -114)">
+      <circle id="Ellipse_5-2" data-name="Ellipse 5" cx="4" cy="4" r="4" transform="translate(104 114)" fill="#343a40"/>
+    </g>
+    <g transform="translate(-68 -114)">
+      <circle id="Ellipse_5-3" data-name="Ellipse 5" cx="4" cy="4" r="4" transform="translate(104 114)" fill="#343a40"/>
+    </g>
+    <g transform="translate(-50 -114)">
+      <circle id="Ellipse_5-4" data-name="Ellipse 5" cx="4" cy="4" r="4" transform="translate(104 114)" fill="#343a40"/>
+    </g>
+    <g transform="translate(-32 -114)">
+      <circle id="Ellipse_5-5" data-name="Ellipse 5" cx="4" cy="4" r="4" transform="translate(104 114)" fill="#343a40"/>
+    </g>
+  </g>
+  <circle id="Ellipse_6" data-name="Ellipse 6" cx="4" cy="4" r="4" transform="translate(90)" fill="#343a40" opacity="0.25"/>
+</svg>
