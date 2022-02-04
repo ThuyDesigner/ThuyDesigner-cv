@@ -19,23 +19,23 @@ import illustartor from "./IMG/illustrator.svg"
 import aftetEffect from "./IMG/afterEffect.svg"
 import reactjs from "./IMG/reactjs.svg"
 import hobbit from "./IMG/gr-hobit.svg"
+import cv from "./IMG/cv.pdf"
+import header from "./IMG/Cv1@2x.png"
+import intro from "./IMG/intro.png"
+// import award from "./IMG/award.svg"
+// import  experence from "./IMG/trending-up.svg"
+
 
 // --------------------
 
-const svgicon = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    fill="currentColor"
-    class="bi bi-exclamation-triangle-fill flex-shrink-0 me-3"
-    viewBox="0 0 16 16"
-    role="img"
-    aria-label="Warning:"
-  >
-    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-  </svg>
+const award = (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
 );
+const experence =(
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+);
+
+
 
 const img =
   "https://image.thanhnien.vn/1080/uploaded/haoph/2021_03_06/img_0467_lsvb.jpg";
@@ -45,12 +45,42 @@ export default function App() {
     <div className="bg-1 cv">
       <div class="container-fluid ">
         <div className="container">
-          {/* <div className="hearder-cv">
-            <div class="row">
-              <div class="col-lg-4"> x4</div>
-              <div class="col-lg-6"> x6</div>
+          <div className="intro ">
+            <div className="row content-intro">
+            <div className=" d-flex align-items-center align-content-center flex-wrap justify-content-center  ">
+            <div className="col-md-8 align-self-center  ">
+              <div className=" d-flex align-items-end flex-column text-header">
+                <div className="">
+                  <p>Curriculum</p>
+
+                </div>
+
+
+                <div className=""><span className="sub">2022</span></div>
+              </div>
+
+
             </div>
-          </div> */}
+            <div className="col-md-4 ps-3">
+              <div className="d-flex align-items-start flex-column job">
+                Senior UI & UX Designer <br></br>
+                Illustrator
+              </div>
+
+            </div>
+            
+
+          </div>
+          {/* <div className="d-flex align-items-end flex-column ">
+            <div className="mt-auto name ">Nguyễn Thị Thu Thuỷ
+              </div></div> */}
+            </div>
+          
+          </div>
+         
+          <div>
+            
+          </div>
           <div className="content-cv">
             <div class="row">
               <div class="col-lg-4 content-cv-left ">
@@ -71,6 +101,7 @@ export default function App() {
                 <div className="content">
                   <TitleContent
                     title="About me"
+                    
                     sub="( 3 years of experience )"
                     decription="Hello! I'm Thuy Nguyen. With a strong passion in designing User Interfaces for Mobile and Website to become more beautiful and clear. Besides that, I have to strike a balance between easy to use customer and developer easy to program to come up with the perfect products.
 I consider myself a creative, open minded and proactive person, who enjoys teamwork and who is always willing to face new challenges. Moreover, i always update new styles about design from social media (Facebook, Instagram, Behance, Dribbble..). This isn't only a big resource to discover but also to connect with designers worldwide. I believe that this is one of the best ways to perfect yourself more in the future.
@@ -153,7 +184,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </div>
                   <div className="row">
                     <div className="col-md-6">
-                    Photoshop 
+                      Photoshop
                     </div>
                     <div className="col-md-6">
                       <img
@@ -165,7 +196,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </div>
                   <div className="row">
                     <div className="col-md-6">
-                    After effects 
+                      After effects
 
                     </div>
                     <div className="col-md-6">
@@ -178,7 +209,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </div>
                   <div className="row">
                     <div className="col-md-6">
-                    XD 
+                      XD
 
                     </div>
                     <div className="col-md-6">
@@ -191,7 +222,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </div>
                   <div className="row">
                     <div className="col-md-6">
-                    HTML/ CSS
+                      HTML/ CSS
 
                     </div>
                     <div className="col-md-6">
@@ -204,7 +235,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </div>
                   <div className="row">
                     <div className="col-md-6">
-                    Reactjs 
+                      Reactjs
 
                     </div>
                     <div className="col-md-6">
@@ -221,13 +252,13 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                 {/* hobbit */}
                 <div className="hobby">
                   <TitleContent title="hobby"> </TitleContent>
-                  <div>
-                  <img
-                        src={hobbit}
-                        class=""
-                        alt=""
-                      ></img>
-                    
+                  <div className="hobby-img">
+                    <img
+                      src={hobbit}
+                      class=""
+                      alt=""
+                    ></img>
+
                   </div>
 
                 </div>
@@ -235,20 +266,26 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                 <div className="My Products">
                   <TitleContent title="My Products"> </TitleContent>
                   <div className="Link">
-                  <a href="https://tinyurl.com/j8e26vbm">https://tinyurl.com/j8e26vbm</a><br></br>
-                  <a href="https://www.behance.net/ngthithuthuy96">https://www.behance.net/ngthithuthuy96</a><br></br>
-                  <a href="https://dribbble.com/thuthuycntt">https://dribbble.com/thuthuycntt</a><br></br>
+                    <a href="https://tinyurl.com/j8e26vbm">https://tinyurl.com/j8e26vbm</a><br></br>
+                    <a href="https://www.behance.net/ngthithuthuy96">https://www.behance.net/ngthithuthuy96</a><br></br>
+                    <a href="https://dribbble.com/thuthuycntt">https://dribbble.com/thuthuycntt</a><br></br>
 
-                    
+
                   </div>
 
+                </div>
+                <div className="button-download">
+
+                  <a href={cv} download>
+                    Download CV
+                  </a>
                 </div>
 
               </div>
               {/* group right */}
               <div class="col-lg-8 content-cv-right">
                 <div className="Edu">
-                  <TitleContent title="Education & Language"> </TitleContent>
+                  <TitleContent title="Education & Language" svg={award}> </TitleContent>
                   <TimeLine
                     time="2018"
                     content="Graduated Telecommunications University"
@@ -265,14 +302,14 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </TimeLine>
                 </div>
                 <div className="Edu">
-                  <TitleContent title="Experience"> </TitleContent>
+                  <TitleContent title="Experience" svg={experence}> </TitleContent>
                   <TimeLine
                     time="2015"
                     content="Design interface for
                     the selling ice cream page."
                   >
                     <div className="gr-text">
-                      <div className="pt-2">
+                      <div className="pt-2 ">
                         Language develop
                       </div>
                       <div className="color-primary pt-1">
@@ -353,7 +390,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   {/* 10/2018 */}
                   <TimeLine
                     time="10/2018 
-                    05/2021"
+                    01/2022"
                     content="Working as UI/UX designer
                     at the Hanbiro Company in Ho Chi Minh City"
                   >

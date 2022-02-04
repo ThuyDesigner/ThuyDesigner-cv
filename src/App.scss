@@ -17,8 +17,47 @@
 .color-primary{
   color: var(--color-light-secondary);
 }
+.gr-text :first-child{
+  text-decoration: underline;
+}
 .cv{
   // background: url("./IMG/content1.png") no-repeat;
+}
+.intro{
+  height: 100vh;
+background: url("./IMG/intro.png") no-repeat;
+background-size: cover;
+background-attachment: fixed; 
+.content-intro{
+  height: 100vh;
+}
+.name{
+  text-decoration: underline;
+  color: var(--color-light-primary);
+  font-weight: 600;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+.job{
+  font-size: 20px;
+}
+}
+.text-header{
+  
+  color: var(--color-light-primary);
+  position: relative;
+  border-right: 10px solid var(--color-bg-title);
+  p{
+    font-size: 100px;
+    padding-right: 20px;
+    text-transform: uppercase;
+  }
+  .sub{
+    font-size: 36px !important;
+    
+    padding-right: 20px;
+  }
+  
 }
 .bg-1{
   background-color: #E7EAEE;
@@ -37,6 +76,7 @@
   background-size: cover;
   background-attachment: fixed; 
   // height: 100vh;
+
   .content-cv-left{
     padding: 60px;
     .avata-user{
@@ -82,9 +122,26 @@
     }
 
   }
+  .hobby-img img{
+    width: 100%;
+
+  }
   .Link{
     a{
       color: var(--color-light-action-primary);
+    }
+    
+  }
+  .button-download{
+    margin-top: 40px;
+    background: var(--color-light-action-primary);
+    text-align: center;
+    a{
+      color: var(--color-bg-light-default);
+      text-decoration: none;
+      text-align: center;
+      margin: 20px;
+      
     }
     
   }

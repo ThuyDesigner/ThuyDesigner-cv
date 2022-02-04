@@ -1,5 +1,6 @@
 .title{
     padding: 20px 0;
+
     .title-main{
         
         font-size: 14px;
@@ -10,6 +11,10 @@
             text-transform: none;
             color: var(--color-light-secondary);
             font-weight: 500;
+        }
+        .icon svg{
+
+            color: var(--color-bg-title);
         }
     }
     .bg-title{

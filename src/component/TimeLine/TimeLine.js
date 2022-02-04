@@ -4,7 +4,7 @@ import "./timeline.scss";
 
 const TimeLine = ({ time = "", content = "", addClass = "", children }) => {
   return (
-    <div className={classNames("gr-timeline pt-5", addClass)}>
+    <div className={classNames("gr-timeline pt-3", addClass)}>
       <div className="row d-flex align-items-start">
         <div className="time col-lg-3 ">{time}</div>
         <div className=" col-lg-9 text-break">
