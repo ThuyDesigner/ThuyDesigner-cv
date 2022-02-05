@@ -52,9 +52,9 @@ export default function App() {
       <div class="container-fluid ">
         <div className="container">
           <div className="intro col-md-12 ">
-            <div className="row content-intro">
+            <div className="row content-intro col-md-12 col-sm-12">
             <div className=" d-flex align-items-center align-content-center flex-wrap justify-content-center  ">
-            <div className="col-md-8 align-self-center  ">
+            <div className="col-md-7 col-sm-7 align-self-center  ">
               <div className=" d-flex align-items-end flex-column text-header">
                 <div className="">
                   <p>Curriculum</p>
@@ -63,7 +63,7 @@ export default function App() {
 
 
             </div>
-            <div className="col-md-4 ps-3">
+            <div className="col-md-5 col-sm-5 ps-3">
               <div className="d-flex align-items-start flex-column job">
                 Senior UI & UX Designer <br></br>
                 Illustrator
@@ -94,8 +94,8 @@ export default function App() {
                         class="rounded-circle"
                         alt="Cinque Terre"
                       ></img>
-                      <div className="name-user">Nguyen Thi Thu Thuy</div>
-                      <div className="sub-job">UI & UX designer</div>
+                      <div className="name-user col-12 col-md-12">Nguyen Thi Thu Thuy</div>
+                      <div className="sub-job col-12 col-md-12">UI & UX designer</div>
                     </div>
                   </div>
                 </div>
@@ -180,10 +180,10 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                 <div className="target">
                   <TitleContent title="Skill"> </TitleContent>
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       Illustrator
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       <img
                         src={illustartor}
                         class=""
@@ -192,10 +192,10 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       Photoshop
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       <img
                         src={illustartor}
                         class=""
@@ -204,11 +204,11 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       After effects
 
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       <img
                         src={aftetEffect}
                         class=""
@@ -217,11 +217,11 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       XD
 
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       <img
                         src={illustartor}
                         class=""
@@ -230,11 +230,11 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       HTML/ CSS
 
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       <img
                         src={illustartor}
                         class=""
@@ -243,11 +243,11 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       Reactjs
 
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-6 col-sm-6 ">
                       <img
                         src={reactjs}
                         class=""
