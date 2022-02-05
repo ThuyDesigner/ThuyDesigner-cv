@@ -480,7 +480,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                         - Send it to the developer and support UI with
                         developer (make HTML, Css file, Scss file.
                         Make tyle for hover, active, focus action,
-                        app Screenshot Mockup, make icon svg, banner CTA...).
+                        app Screenshot Mockup, make icon svg, banner CTA...).<br></br>
                         - Check UI (font-size, color, type of text
                         synchronization of components), edit, improve
                         after the Developer finished the project.<br></br>
