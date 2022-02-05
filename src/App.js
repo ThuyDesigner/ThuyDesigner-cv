@@ -15,6 +15,7 @@ import mail from "./IMG/mail.svg";
 import phone from "./IMG/phone.svg";
 import behance from "./IMG/behance.svg";
 import dribble from "./IMG/dribble.svg";
+import github from "./IMG/github.svg";
 import illustartor from "./IMG/illustrator.svg"
 import aftetEffect from "./IMG/afterEffect.svg"
 import reactjs from "./IMG/reactjs.svg"
@@ -34,29 +35,30 @@ const award = (
 const experence =(
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
 );
-
+const educationtime =[{ small: "", time:"2018" }];
+const ex1 =[{ small: "", time:"2015" }];
+const ex2 =[{ small: "", time:"2015" }];
+const ex3 =[{ small: "", time:"2017" } ,{ small: "", time:"2018" }  ];
+const time =[{ small: "10/", time:"2018" },{ small: "01/", time:"2022" }];
 
 
 const img =
   "https://image.thanhnien.vn/1080/uploaded/haoph/2021_03_06/img_0467_lsvb.jpg";
+
 
 export default function App() {
   return (
     <div className="bg-1 cv">
       <div class="container-fluid ">
         <div className="container">
-          <div className="intro ">
+          <div className="intro col-md-12 ">
             <div className="row content-intro">
             <div className=" d-flex align-items-center align-content-center flex-wrap justify-content-center  ">
             <div className="col-md-8 align-self-center  ">
               <div className=" d-flex align-items-end flex-column text-header">
                 <div className="">
                   <p>Curriculum</p>
-
-                </div>
-
-
-                <div className=""><span className="sub">2022</span></div>
+                </div>  <div className=""><span className="sub">2022</span></div>
               </div>
 
 
@@ -139,6 +141,13 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                     isLink="true"
                     addLink="https://dribbble.com/thuthuycntt"
                     text="https://dribbble.com/thuthuycntt"
+                    addClass="pt-2"
+                  ></GrIconText>
+                  <GrIconText
+                    icon={github}
+                    isLink="true"
+                    addLink="https://github.com/ThuyDesigner"
+                    text="https://github.com/ThuyDesigner"
                     addClass="pt-2"
                   ></GrIconText>
                 </div>
@@ -287,7 +296,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                 <div className="Edu">
                   <TitleContent title="Education & Language" svg={award}> </TitleContent>
                   <TimeLine
-                    time="2018"
+                    times={educationtime}
                     content="Graduated Telecommunications University"
                   >
                     <div className="pt-2">
@@ -304,7 +313,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                 <div className="Edu">
                   <TitleContent title="Experience" svg={experence}> </TitleContent>
                   <TimeLine
-                    time="2015"
+                    times={ex1}
                     content="Design interface for
                     the selling ice cream page."
                   >
@@ -334,7 +343,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </TimeLine>
                   {/* 2015 */}
                   <TimeLine
-                    time="2015"
+                    times={ex2}
                     content="Design interface for
                     the selling ice cream page."
                   >
@@ -363,7 +372,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </TimeLine>
                   {/* 2017-2018 */}
                   <TimeLine
-                    time="2017-2018"
+                    times={ex3}
                     content="Partime: Design texture for T-shirt"
                   >
                     <div className="gr-text">
@@ -389,8 +398,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                   </TimeLine>
                   {/* 10/2018 */}
                   <TimeLine
-                    time="10/2018 
-                    01/2022"
+                  times={time}
                     content="Working as UI/UX designer
                     at the Hanbiro Company in Ho Chi Minh City"
                   >

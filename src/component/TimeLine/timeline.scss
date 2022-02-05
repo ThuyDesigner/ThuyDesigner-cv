@@ -3,6 +3,12 @@
     .time{
         font-size: 40px;
         color: var(--color-light-secondary);
+        .text-small{
+            font-size: 20px;
+        }
+        ul{
+            list-style-type: none;
+        }
 
     }
     .content{

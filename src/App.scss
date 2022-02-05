@@ -14,6 +14,18 @@
   --color-bg-title:#F9ACBB;
 
 }
+@media only screen and (max-width: 600px) {
+  .intro{
+    .text-header p{
+      font-size: 40px !important;
+    }
+    
+
+  }
+  .job{
+    text-align: initial;
+  }
+}
 .color-primary{
   color: var(--color-light-secondary);
 }
