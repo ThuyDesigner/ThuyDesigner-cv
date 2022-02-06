@@ -186,6 +186,7 @@ background-attachment: fixed;
 
   }
   .Link{
+    word-wrap: break-word;
     a{
       color: var(--color-light-action-primary);
     }
