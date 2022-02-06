@@ -18,22 +18,37 @@
   .intro{
     .text-header p{
       font-size: 40px !important;
+      
+      margin-bottom: 0 !important;
     }
     
 
   }
   .job{
-    text-align: initial;
+    // text-align: initial;
+    
   }
 }
 @media only screen and (max-width: 600px) {
   .intro{
+    .text-header{
+    border-right: none !important;
+    border-bottom: 5px solid var(--color-bg-title);
+    text-align: center;
+    align-items: center !important;
+    .sub{
+      font-size: 20px !important;
+    }}
     .text-header p{
       font-size: 40px !important;
     }
   }
   .job{
-    text-align: initial;
+    // text-align: initial;
+    text-align: center !important;
+    font-size: 18px !important;
+    color: var(--color-light-secondary) !important;
+    padding-top: 10px !important;
   }
   .content-cv{
     .avata-user{
@@ -43,6 +58,19 @@
     }
     
   }
+  .gr-timeline{
+    
+    .time{
+        font-size: 30px !important;
+        color: var(--color-light-secondary);
+        .text-small{
+            font-size: 20px !important;
+        }
+        
+
+    }
+   
+}
 }
 .color-primary{
   color: var(--color-light-secondary);
@@ -76,7 +104,7 @@ background-attachment: fixed;
   
   color: var(--color-light-primary);
   position: relative;
-  border-right: 10px solid var(--color-bg-title);
+  border-right: 5px solid var(--color-bg-title);
   p{
     font-size: 60px;
     padding-right: 20px;
