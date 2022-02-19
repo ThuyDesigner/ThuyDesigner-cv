@@ -303,7 +303,7 @@ I consider myself a creative, open minded and proactive person, who enjoys teamw
                       Bachelor of Information Technology
                     </div>
                     <div className="color-primary pt-1">
-                      Technology software
+                    Software engineering
                     </div>
                     <div className="content-timeline pt-2">
                       English -TOEIC 450
