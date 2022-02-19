@@ -65,7 +65,7 @@ export default function App() {
             </div>
             <div className="col-md-5 col-sm-5 ps-3">
               <div className="d-flex align-items-start flex-column job">
-                Senior UI & UX Designer <br></br>
+                UI & UX Designer <br></br>
                 Illustrator
               </div>
 
