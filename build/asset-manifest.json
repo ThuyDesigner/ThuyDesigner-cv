@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.42172149.chunk.css",
+    "main.js": "/static/js/main.57ffa3c5.chunk.js",
+    "main.js.map": "/static/js/main.57ffa3c5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.45dc2ec6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.45dc2ec6.js.map",
+    "static/css/2.f1d0da30.chunk.css": "/static/css/2.f1d0da30.chunk.css",
+    "static/js/2.5a33f047.chunk.js": "/static/js/2.5a33f047.chunk.js",
+    "static/js/2.5a33f047.chunk.js.map": "/static/js/2.5a33f047.chunk.js.map",
+    "static/js/3.41e534b0.chunk.js": "/static/js/3.41e534b0.chunk.js",
+    "static/js/3.41e534b0.chunk.js.map": "/static/js/3.41e534b0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f1d0da30.chunk.css.map": "/static/css/2.f1d0da30.chunk.css.map",
+    "static/css/main.42172149.chunk.css.map": "/static/css/main.42172149.chunk.css.map",
+    "static/js/2.5a33f047.chunk.js.LICENSE.txt": "/static/js/2.5a33f047.chunk.js.LICENSE.txt",
+    "static/media/Cv1@2x.e717bbaa.png": "/static/media/Cv1@2x.e717bbaa.png",
+    "static/media/afterEffect.b16ce608.svg": "/static/media/afterEffect.b16ce608.svg",
+    "static/media/behance.4b5d3155.svg": "/static/media/behance.4b5d3155.svg",
+    "static/media/birthday.5c878b04.svg": "/static/media/birthday.5c878b04.svg",
+    "static/media/App.scss": "/static/media/intro.d7365205.png",
+    "static/media/cv.ad5ec102.pdf": "/static/media/cv.ad5ec102.pdf",
+    "static/media/dribble.e2337481.svg": "/static/media/dribble.e2337481.svg",
+    "static/media/github.1b2da1f2.svg": "/static/media/github.1b2da1f2.svg",
+    "static/media/gr-hobit.917370ad.svg": "/static/media/gr-hobit.917370ad.svg",
+    "static/media/illustrator.9bead8fe.svg": "/static/media/illustrator.9bead8fe.svg",
+    "static/media/mail.7560c3db.svg": "/static/media/mail.7560c3db.svg",
+    "static/media/phone.4ecd80a8.svg": "/static/media/phone.4ecd80a8.svg",
+    "static/media/pin.54cbf7fe.svg": "/static/media/pin.54cbf7fe.svg",
+    "static/media/reactjs.6a8143fd.svg": "/static/media/reactjs.6a8143fd.svg",
+    "static/media/usename.691fb019.png": "/static/media/usename.691fb019.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.45dc2ec6.js",
+    "static/css/2.f1d0da30.chunk.css",
+    "static/js/2.5a33f047.chunk.js",
+    "static/css/main.42172149.chunk.css",
+    "static/js/main.57ffa3c5.chunk.js"
+  ]
+}

@@ -1,0 +1,22 @@
+.gr-timeline{
+    
+    .time{
+        font-size: 40px;
+        color: var(--color-light-secondary);
+        .text-small{
+            font-size: 20px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0 !important;
+        }
+
+    }
+    .content{
+        font-size: 18px;
+        font-weight: 700;
+        color: var( --color-light-primary);
+        text-transform: uppercase;
+
+    }
+}

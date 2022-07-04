@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_58" data-name="Group 58" transform="translate(-30 -668)">
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="16" height="16" rx="8" transform="translate(30 668)" fill="#343a40"/>
+    <path id="Icon_feather-phone" data-name="Icon feather-phone" d="M7.333,5.64v1a.667.667,0,0,1-.727.667A6.6,6.6,0,0,1,3.73,6.283a6.5,6.5,0,0,1-2-2A6.6,6.6,0,0,1,.707,1.393.667.667,0,0,1,1.37.667h1a.667.667,0,0,1,.667.573,4.28,4.28,0,0,0,.233.937.667.667,0,0,1-.15.7L2.7,3.3a5.333,5.333,0,0,0,2,2L5.12,4.88a.667.667,0,0,1,.7-.15,4.28,4.28,0,0,0,.937.233.667.667,0,0,1,.573.677Z" transform="translate(33.981 672.012)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.667"/>
+  </g>
+</svg>
